@@ -1,0 +1,25 @@
+{
+  "name": "testcafe_demo",
+  "version": "1.0.0",
+  "description": "Automated testing with TestCafe",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome ./tests --reporter json",
+    "test:chrome:headless": "testcafe chrome:headless ./tests",
+    "test:chrome:mobile": "testcafe chorme:emulation:device=iphone X ./tests",
+    "test:safari": "testcafe safari ./tests",
+    "test:firefox": "testcafe firefox ./tests"
+  },
+  "keywords": [
+    "TestCafe",
+    "Testing",
+    "Automation"
+  ],
+  "author": "HanhLT",
+  "license": "ISC",
+  "dependencies": {
+    "pretier": "0.0.1",
+    "testcafe": "^1.15.2",
+    "testcafe-reporter-json": "^2.2.0"
+  }
+}
